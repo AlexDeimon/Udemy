@@ -1,0 +1,5 @@
+datos\Conexion.class
+datos\ObraDAO.class
+test\TestManejoObras.class
+test\TestMySqlJDBC.class
+Entidades\Obra.class

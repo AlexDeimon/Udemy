@@ -1,0 +1,8 @@
+datos\MuseoDao.class
+datos\ObraDAO.class
+test\TestManejoObras.class
+Entidades\MuseoDTO.class
+test\TestManejoMuseos.class
+datos\Conexion.class
+datos\MuseoDaoJDBC.class
+Entidades\Obra.class
