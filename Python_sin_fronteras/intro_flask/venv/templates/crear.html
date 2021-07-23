@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    agregar cliente
+{% endblock%}
+
+{% block content %}
+    <form method="post">
+        <label>id cliente</label>
+        <input name="id_cliente" required/>
+        <br>
+        <label>nombre cliente</label>
+        <input name="nombre_cliente" required/>
+        <br>
+        <label>email</label>
+        <input name="email" required/>
+        <br>
+        <label>telefono</label>
+        <input name="telefono" required/>
+        <br>
+        <label>direccion</label>
+        <input name="direccion" required/>
+        <br>
+        <input type="submit" value="agregar"/>
+    </form>
+{% endblock%}

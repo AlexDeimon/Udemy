@@ -1,0 +1,38 @@
+/*
+LOS MARGENES VERTICALES COLAPSAN
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.header{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /*overflow: hidden;/*solucion 1 al colapsado de margenes entre padres e hijos*/
+    /*padding-top: 0.1px;/*solucion 2 al colapsado de margenes entre padres e hijos*/
+    border-top: 0.1px solid lightcoral;/*solucion 3 al colapsado de margenes entre padres e hijos*/
+}
+.title{
+    margin: 0;
+    margin-top: 30px;
+}
+
+.box1,
+.box2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+
+.box2{
+    margin-top: 20px;
+}

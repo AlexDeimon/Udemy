@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <form>
+        <h1>Inputs</h1>
+        <input type="button" value="enviar"><!--No funcionan para enviar forms-->
+        <br>
+        <input type="submit" value="Enviar formulario"> <!--Si envia formulario-->
+        <br>
+        <button>Enviar</button>
+        <br>
+        <h2>Fechas</h2>
+        <input type="date">
+        <input type="time">
+        <br>
+        <input type="week">
+        <br>
+        <input type="month">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <h2>Para móviles</h2>
+        <div>
+            <label>
+            Search
+            <input type="search">
+        </label>
+        </div>
+        <div>
+            <label>
+                telefono
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label>
+                correo
+                <input type="email">
+            </label>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label>
+                Url
+                <input type="url">
+            </label>
+        </div>
+        <h2>Otros inputs</h2>
+        <input type="color">
+        <br>
+        <input type="number">
+        <br>
+        <input type="range" step="5" min="0" max="20">
+        <br>
+        <input type="reset" value="limpiar">
+        <br>
+        <input type="hidden">
+        <h2>seleccionadores radio</h2>
+        <!--Atributo checked: marcado por defecto-->
+        <h3>Género</h3>
+        <label>
+            Masculino
+            <input type="radio" name="gender" value="masculino">
+        </label>
+        <label>
+            Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>
+            Prefiero no decirlo
+            <input type="radio" name="gender"
+            value="desconocido">
+        </label>
+        <br>
+        <h2>seleccionadores checkbox</h2>
+        <h3>Lenguajes</h3>
+        <label>
+            HTML
+            <input type="checkbox" name="lenguajes" value="HTML">
+        </label>
+        <label>
+            CSS
+            <input type="checkbox" name="lenguajes" value="CSS">
+        </label>
+        <label>
+            JavaScript
+            <input type="checkbox"
+            name="lenguajes" value="JavaScript">
+        </label>
+        <h2>Seleccionables básicos</h2>
+        <!--atributo multiple: deja seleccionar mas de uno-->
+        <h3>Lenguajes</h3>
+        <select name="lenguajes">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaSccript">JavaScript</option>
+        </select>
+        <h2>Seleccionables avanzados</h2>
+        <h3>Mascotas</h3>
+        <select name="mascotas">
+            <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="otras">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarántula</option>
+            </optgroup>
+        </select>
+        <h2>DataList</h2>
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="perro"></option>
+            <option value="gato"></option>
+            <option value="hamster"></option>
+            <option value="conejo"></option>
+            <option value="loro"></option>
+            <option value="canario"></option>
+            <option value="serpiente"></option>
+            <option value="tarantula"></option>
+        </datalist>
+    </form>
+</body>
+</html>

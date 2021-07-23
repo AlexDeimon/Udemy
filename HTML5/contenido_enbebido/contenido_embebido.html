@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <style>
+        video{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contenido embebido</h1>
+    <h2>Imagenes</h2>
+    <!--<img srcset="assets\images\portada-big.jpg,
+    assets\images\portada-medium.jpg 2x,
+    assets\images\portada-small.jpg 3x" alt="portada">-->
+    <!--<picture>
+        <source srcset="assets\images\portada-big.jpg,
+        assets\images\portada-medium.jpg 2x,
+        assets\images\portada-small.jpg 3x">
+        <source srcset="assets\images\portada-medium.jpg" media="(max-width: 1200px)">
+        <img src="assets\images\portada-small.jpg" alt="">
+    </picture>-->
+    <h2>Audio</h2>
+    <audio src="assets/audio/Trouble.mp3" controls autoplay muted></audio>
+    <h2>Videos</h2>
+    <video src="assets/video/pentakill.webm" controls poster="assets/images/portada-medium.jpg" muted loop></video>
+    <h2>iframes</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fp_milOcghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

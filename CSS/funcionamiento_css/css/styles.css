@@ -1,0 +1,68 @@
+/*
+Especificidad: establece como de especifico es un selector para saber qué estilo aplicar.
+El calculo se realiza con la siguiente formula:
+    etiquetas y pseudoelementos 001
+    clases, atributos y pseudoclases 010
+    Ids 100
+    estilos en linea 1000
+    !important GANA A TODO. NO USAR NUNCA XD
+Cascada: funciona siempre que la especificidad sobre el elemento sea la misma
+
+Herencia: capacidad que tienen elementos de heredar algunas propiedades de sus elementos contenedores
+
+Ordenar propiedades:
+    1.posicionamiento
+    2.box-model
+    3.texto
+    4.visuales (colores, bordes, background)
+    5.las demas
+*/
+
+h1.title#title{
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: red;
+}
+
+.title{
+    background-color: blue;
+}
+
+#title{
+    background-color: green;
+}
+
+h1.title{
+    background-color: yellow;
+}
+
+h1#title{
+    background-color: teal;
+}
+/*herencia*/
+body{
+    background-color: #333;
+}
+
+.title{
+    color: red;
+    font-size: 50px;
+}
+
+.text{
+    color: red;
+}
+
+.link{
+    color: inherit; /*forzar herencia*/
+}
+
+.list{
+    color: indianred;
+}
+
+.item-extra{ /*evitar herencia*/
+    color: initial;
+}

@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    /*z-index: 50; el padre JAMAS se pondra delante del hijo*/
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+.box1{
+    background-color: lightcoral;
+    position: relative;
+    left: 150px;
+    z-index: -10;/*con un valor negativo el hijo se coloca detras del padre SI Y SOLO SI el padre no tiene z-index*/
+}
+.box2{
+    background-color: lightgreen;
+    position: relative;
+    top: 50px;
+    z-index: 30;/*el mayor valor prevalece*/
+}
+.box3{
+    background-color: lightseagreen;
+    position: relative;
+    z-index: 20;
+}

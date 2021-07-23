@@ -1,0 +1,108 @@
+/*
+Margin: 
+    Es la propiedad que nos permite generar espacio entre elementos.
+    Es un shorthand(propiedad abreviada) que controla los 4 lados posibles a los que dar margenes.
+    margin-top: superior.
+    margin-right: derecha.
+    margin-button: inferior.
+    margin-left: izquierda.
+
+    Admite hasta 4 valores que van en el orden de las manecillas del relog.
+    4 valores: margin: top, right, botton, left;
+    3 valores: margin: top, left/right botton;
+    2 valores: margin: top/botton left/right;
+    1 valor: margin: todos los lados.
+
+Padding: 
+    Es la propiedad que nos permite generar espacio entre el borde y la caja
+    Es un shorthand(propiedad abreviada) que controla los 4 lados posibles a los que dar padding.
+    padding-top: superior.
+    padding-right: derecha.
+    padding-button: inferior.
+    padding-left: izquierda.
+
+    Admite hasta 4 valores que van en el orden de las manecillas del relog.
+    4 valores: padding: top, right, botton, left;
+    3 valores: padding: top, left/right botton;
+    2 valores: padding: top/botton left/right;
+    1 valor: padding: todos los lados.
+
+Border:
+    Propiedad que permite modificar el borde de la caja
+    Es un shorthand( propiedad abreviada) que agrupa 3 propiedades:
+        border-width: ancho
+            border-top-width
+            border-right-width
+            border-button-width
+            border-left-width
+        border-style: estilo
+            border-top-style
+            border-right-style
+            border-button-style
+            border-left-style
+            Estilos:
+                none
+                hidden
+                dotted
+                dashed
+                solid
+                double
+                groove
+                ridge
+                inset
+                outset
+        border-color: color
+            border-top-color
+            border-right-color
+            border-button-color
+            border-left-color
+Box-sizing:
+    Es la propiedad que nos permite controlar el calculo que hace el navegador a lahora de modificar las propiedades content, padding y border.
+        content-box: defecto
+        border-box: calculo de tamaño del elemento incluyendo el padding y el border
+*/
+
+*{
+    box-sizing: border-box;
+} /*Selector universal*/
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /*margin: 100px 50px 10px 200px;*/
+    margin-left: auto;/*PARA QUE LOS AUTO FUNCIONEN EL ELEMENTO DEBE TENER WIDTH DECLARADO Y ESTARIA APLICANDOSE A LA CAJA, NO EL CONTENIDO*/
+    margin-right: auto;
+    padding: 50px 20px 100px;
+    border: 5px solid red;
+}
+
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+    width: 200px; /*LOS ELEMENTOS EN LINEA NO TIENEN MEDIDAS*/
+    height: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px; /*LOS ELEMENTOS EN LINEA SOLO TIENEN MARGENES A LOS LADOS*/
+    /*margin-left: 100px;*/
+}
+.buttons{
+    background-color: steelblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+.button{
+    margin-left: 350px;
+    padding: 25px 50px; 
+    border: 20px solid red;
+    border-right-color: blue;
+    border-right-width: 10px;
+    border-style: outset;
+}

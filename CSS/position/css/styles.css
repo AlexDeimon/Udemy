@@ -1,0 +1,116 @@
+/*
+La propiedad position nos permite posicionar los elementos.
+
+    Flujo de renderizado: Generalmente los elementos se dibujan de izq a der y de arriba a abajo. el punto 0,0 de los elementos es la esquina sup izq
+    
+    Espacio reservado: es el espacio de un elemento asignado en el navegdor
+
+    Elemento posicionado: esto significa que el elemento tiene la propiedad position con un valor distinto de "static" (defecto)
+    
+    Stackin context: contexto de apilamiento. es el orden en el que se apilaran las cajas que se superponen, dentro del mismo contenedor
+
+Al posicionar un elemento hay 5 propiedades para mover los elementos en los 3 ejes
+
+    top: el elemento se movera desde la parte superior la distancia indicada
+    right: el elemento se movera desde la parte derecha la distancia indicada
+    bottom: el elemento se movera desde la parte inferior la distancia indicada
+    left: el elemento se movera desde la parte izquierda la distancia indicada
+    z-index: nos permite mover el elmento en el conexto de apilamiento (eje z)
+
+    NOTA: si un elemento le declaramos la propiedad top y/o left, las propiedades bottom y right no funcionaran.
+
+valores a position:
+    static (defecto) no se movera
+    relative: el elemento mantendra su posicion y medidas en el flujo de renderizado y mantendra su espacio recervado. si lo movemos lo hara usando su posicion en el html como punto de referencia
+    absolute: el elemento perdera sus medidas y su espacio reservado. si lo movemos usara el elemento padre posicionado como referencia. si no tiene ninguno usara a html como como referencia
+    fixed: el elemento perdera sus medidas y su espacio reservado. si lo movemos usara el html de referencia y se quedara fijo en esa posicion aunque hagamos scroll
+    Sticky: mescla de relative y fixed. los valores top, etc no sirven para mover el elemento, si no para indicarle en que punto pasara a tener un comportamiento fixed, hasta llegar a ese punto es relative
+*/
+
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    /*padding-top: 50px;fixed*/
+}
+/*relative*/
+/* .box{
+    width: 100px;
+    height: 100px;
+}
+.box-1{
+    background-color: lightcoral;
+    position: relative;
+    top: 50px; 
+}
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+} */
+/*absolute*/
+/* .box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    background-color:lightskyblue;
+    position: absolute;
+}
+.box-1{
+    background-color: lightcoral;position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box-2{
+    background-color: lightgreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.link{
+    position: absolute;
+    background-color: lime;
+    width: 200px;
+    top: 50px;
+} */
+/*fixed*/
+/* .header{
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightskyblue;
+    color: orangered;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+/*stiky*/
+img{
+    width: 100%;
+    display: block;
+}
+
+.header{
+    text-align: center;
+    background-color: lightskyblue;
+    color: orangered;
+    /*position: sticky;
+    /*top: 0;/*al llegar a top 0 el header pasa a ser fixed
+    height: 200px;*/
+}
+/* .menu{
+    position: sticky;
+    top: 0;
+} */
+.article-title{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
+}

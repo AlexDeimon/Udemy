@@ -1,0 +1,31 @@
+/*
+Absolutas: 
+    las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independientemente del dispositivo o la interaccion del usuario.
+    la mas usada es px cuya medida es 1/96 lin, pero existen otras como: 
+        cm -> 1cm = 96px/2,54
+        mm -> 1mm = 1/10 de 1cm
+        Q -> 1Q = 1/40 cm de 1cm
+        in -> 1ln = 2,54 cm = 96px
+        pc -> 1pc = 1/16 de 1in
+        pt -> 1pt = 1/72 de 1in
+    
+Relativas: 
+    Siempre dependen del contexto, son las que se recomienda usar en la gran mayoria de ocasiones porq nos van a permitir que todos los elementos escalen proporcionadamente
+    Las mas usadas son em, rem, %, vw, vh, vmin y vmax, aunq hay otras como: 
+        ex -> Altura x del elemento
+        ch -> La media dle ancho del glifo "0" de la letra del elemento
+        lh -> Altura de la linea del elemento
+
+    rem: Corresponde a la media de la "m" de la raiz del documento (html)
+    16px = 1rem
+
+    em: Corresponde a la media de la "m" en el contexto donde nos encontramos
+
+    El estandar de tamaño de fuente por defecto en la raiz del documento es 16px, Y NO ES RECOMENDABLE MODIFICARLO
+    NOTA: Tanto em como rem es calcula en base a la propiedad front-size
+*/
+
+body{
+    background-color: #333;
+    color: lightcoral;
+}

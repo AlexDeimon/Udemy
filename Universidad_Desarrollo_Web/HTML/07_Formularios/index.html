@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <form method="GET" autocomplete="off">
+        <fieldset>
+            <legend>Datos persona: </legend>
+
+            <label for="idPersona">ID Persona: </label><br>
+            <input type="text" id="idPersona" name="idPersona" readonly="true" value="100" disabled><br>
+
+            <input type="hidden" name="sistema" id="sistema" value="SAP">
+
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+            <label for="apellido">Apellido: </label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"><br>
+
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" name="password" required="true"><br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" name="email" id="email" required="true"><br>
+
+            <label for="edad">Edad: </label><br>
+            <input type="number" name="edad" id="edad" required="true" step="any"><br><!-- step any = valores con . decimal -->
+
+            <label>Genero: </label><br>
+            <input type="radio" name="genero" id="femenino" value="femenino" required="true">
+            <label for="femenino">femenino</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino" required="true">
+            <label for="masculino">masculino</label><br>
+
+            <label>Música favorita: </label><br>
+            <input type="checkbox" name="musica" id="clasica" value="clasica" required="true">
+            <label for="clasica">clasica</label><br>
+            <input type="checkbox" name="musica" id="jazz" value="jazz" required="true">
+            <label for="jazz">jazz</label><br>
+
+            <label for="autos">Marca auto favorita</label><br>
+            <select name="autos" id="autos" multiple="true">
+                <option value="chevrolet">chevrolet</option>
+                <option value="ferrari" selected="true">ferrari</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+            </select><br>
+
+            <label for="comentario">Comentarios: </label><br>
+            <textarea name="comentario" id="comentario" cols="50" rows="30"></textarea><br>
+
+            <input type="submit" value="enviar">
+            <input type="submit" formnovalidate="formnovalidate" value="enviar sin validar">
+            <input type="reset" value="restablecer">
+        </fieldset>
+    </form>
+</body>
+</html>
