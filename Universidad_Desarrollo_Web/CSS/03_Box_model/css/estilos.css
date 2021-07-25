@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+div{
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    /* margin: 0 auto;centrar horizontal ELEMENTO */
+    /* margin-left: 100px; */
+    margin: 20px;
+    background-color: #f1faee;
+    /* width: 300px; */
+    /* outline: 10px solid #a8dadc;
+    outline-offset: 10px;separación outline con border */
+    box-sizing: border-box;/*width total con padding y border*/
+    max-width: 300px;
+    /* max-height: 100px; */
+}
+/* p.interno{
+    margin-left: inherit;
+} */
+.caja1{
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    margin: 20px;
+    background-color: #f1faee;
+    box-sizing: border-box;/*width total con padding y border*/
+    max-width: 300px;
+    /* max-height: 100px; */
+}
+.caja2{
+    padding: 10px 15px 5px 3px;
+    border: 1px solid #457b9d;
+    margin: 30px;
+    background-color: #f1faee;
+    box-sizing: border-box;/*width total con padding y border*/
+    max-width: 300px;
+    /* max-height: 100px; */
+}
+/*Margin collapse solo aplica a elementos de tipo block en las margin top y bottom*/
