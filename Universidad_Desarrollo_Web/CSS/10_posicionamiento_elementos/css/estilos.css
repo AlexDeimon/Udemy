@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+div{
+    /* width: 50%; */
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto;
+}
+#static{
+    position: static;
+    /* top: 100px;
+    left: 50px; No afectan al div*/
+}
+#relative{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    /* bottom: 10px;
+    right: 50px;  solo es top o bottom y right o left*/ 
+}
+#fixed{
+    position: fixed; /*fijado a la misma posición en la pantalla*/
+    max-width: none;
+    top: 100px;
+    left: 50px;
+}
+#absolute{
+    position: absolute;/*fijado a la misma posicion del contenedor mientras no sea static*/
+    top: 20px;
+    right: 0px;
+}
+#relative2{
+    position: relative;
+    height: 200px;
+    max-width: 300px;
+    border: 3px solid cornflowerblue;
+    top: 10px;
+    left: 100px;
+}
+#sticky{
+    position: sticky;
+    position: -webkit-sticky; /*para safari*/
+    bottom: 0;
+}
