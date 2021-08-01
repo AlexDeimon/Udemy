@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+div.contenedor{
+    display: flex;
+    background-color: #560bad;
+    height: 300px;
+    /* flex-direction: column;
+    flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: nowrap; defecto */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: flex-start; defecto*/
+    /* justify-content: center; */
+    /* justify-content: flex-end; derecha*/
+    /* justify-content: space-between; es como un justificado */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    /*horizontal*/
+    /* align-items: flex-start; superior */
+    /* align-items: center; medio */
+    /* align-items: flex-end; inferior */
+    /* align-items: stretch; defecto */
+    /* align-items: baseline; lineabase del texto */
+    align-items: center;
+    /*vertical*/
+    align-content: center;
+}
+div.contenedor > p{
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+
+}
