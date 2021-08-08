@@ -3,4 +3,4 @@ do{
     console.log(contador);
     contador++;
 } while (contador < 5);
-console.log("fin ciclo while");
+console.log("fin ciclo do while");
